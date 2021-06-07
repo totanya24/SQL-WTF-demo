@@ -22,7 +22,7 @@ class AddSnackForm(FlaskForm):
     category = SelectField("Category", choices=[("ic", "Ice Cream"), ("chips", "Potato chips"),
                                                ("sweets", "Candy/Sweets")])
 
-class NewEmployeeForm(FlaskForm):
+class EmployeeForm(FlaskForm):
 
     name = StringField("Employee Name")
     state = SelectField("state", choices=[(st, st) for st in states])
